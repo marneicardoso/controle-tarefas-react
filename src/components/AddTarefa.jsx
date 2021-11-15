@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 
-const AddTarefa = ({handleTarefa: handleTarefaAdd}) => {
+const AddTarefa = ({handleTarefaAdd: handleTarefaAdd}) => {
     const [inputData, setInputData] = useState("")
     
     const handleInputChange = (e) => {

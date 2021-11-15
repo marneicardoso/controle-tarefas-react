@@ -11,7 +11,7 @@ const Detalhes = () => {
                 <button>voltar</button>
             </div>
             <div className="tarefa-detalhe">
-                <p>TITULO</p>
+                <h2>{params.titulo}</h2>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam suscipit fugiat temporibus delectus reiciendis consequatur!
                 </p>
