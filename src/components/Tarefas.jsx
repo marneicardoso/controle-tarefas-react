@@ -2,7 +2,7 @@ import React from 'react'
 import Tarefa from './Tarefa'
 
 // props == parâmetros/argumentos
-const Tarefas = ({ tarefas, handleTarefaClick, handleTarefaDelete }) => {
+const Tarefas = ({ tarefas, handleTarefaClick, handleTarefaDelete, handleTarefaDetalhe }) => {
     return (
         <React.Fragment>
             {tarefas.map((tarefa) => (
@@ -10,6 +10,7 @@ const Tarefas = ({ tarefas, handleTarefaClick, handleTarefaDelete }) => {
                     tarefa={tarefa}
                     handleTarefaClick={handleTarefaClick}
                     handleTarefaDelete={handleTarefaDelete}
+                    handleTarefaDetalhe={handleTarefaDetalhe}
                 />
             ))}
         </React.Fragment>

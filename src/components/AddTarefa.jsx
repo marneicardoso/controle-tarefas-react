@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 
-const AddTarefa = ({handleTarefa}) => {
+const AddTarefa = ({handleTarefa: handleTarefaAdd}) => {
     const [inputData, setInputData] = useState("")
     
     const handleInputChange = (e) => {
@@ -9,7 +9,7 @@ const AddTarefa = ({handleTarefa}) => {
     }
 
     const handleAddTarefaClick = () => {
-        handleTarefa(inputData)
+        handleTarefaAdd(inputData)
         setInputData("") // Limpa o campo input
     }
 

@@ -84,12 +84,39 @@ body {
     color: #f9f9f9;
     background-color: #228b22;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #28b428;
+    color: #2f4d2f;
+    transition: 0.3s;
 }
 
 .btn-delete {
     border: none;
-    font-size: 1.2rem;
-    color: #ff6435;
+    font-size: 1.5rem;
+    color: #6b756b;
     background-color: #444444;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-delete:hover {
+    color: #ff5522;
+    transition: 0.3s;
+}
+
+.btn-detalhe {
+    border: none;
+    font-size: 1.5rem;
+    color: #6b756b;
+    background-color: #444444;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-detalhe:hover {
+    color: #28b428;
+    transition: 0.3s;
 }

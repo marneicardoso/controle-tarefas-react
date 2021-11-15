@@ -1,7 +1,8 @@
 import React from 'react';
-import {FaTrashAlt} from 'react-icons/fa'
+import {CgCloseO} from 'react-icons/cg'
+import {CgInfo} from 'react-icons/cg'
 
-const Tarefa = ({ tarefa, handleTarefaClick, handleTarefaDelete }) => {
+const Tarefa = ({ tarefa, handleTarefaClick, handleTarefaDelete, handleTarefaDetalhe }) => {
     const tarefaCompleta = tarefa.isCompleta ?
         { borderLeft: '6px solid #228b22', paddingLeft: '35px' } : {}
     
@@ -14,8 +15,15 @@ const Tarefa = ({ tarefa, handleTarefaClick, handleTarefaDelete }) => {
             <div className="btn-container">
                 <button
                     className="btn-delete"
+                    title="Excluir a tarefa"
                     onClick={() => handleTarefaDelete(tarefa.id)}>
-                    <FaTrashAlt />
+                    <CgCloseO />
+                </button>
+                <button
+                    className="btn-detalhe"
+                    title="Informações"
+                    onClick={() => handleTarefaDetalhe(tarefa.id)}>
+                    <CgInfo />
                 </button>
             </div>
         </div>
